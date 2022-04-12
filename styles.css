@@ -1,0 +1,145 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/infini-bold.otf);
+  src: url(fonts/libertinussans-regular.otf);
+}
+
+a:link {
+color: black;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: #3e3098;
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: #0000e1;
+text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+color: #890505; 
+text-decoration: underline;
+}
+
+/* added an h1 style */
+h1 {   
+font-family: myFirstFont;
+src: url(fonts/infini-bold.otf);
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+    font-size: 1.4em;
+    line-height: 1em;
+    margin: 1em;
+}
+
+/* added a max-width to paragraphs */
+p {font-family: myFirstFont;
+src: url(fonts/libertinussans-regular.otf);
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+body {
+  background-color: powderblue;
+}
+
+/* website title */
+label.logo{
+    font-family: myFirstFont;
+    src: url(fonts/infini-bold.otf);
+    font-weight: 800;
+    font-style: normal;
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 40px;
+}
+
+  /* consolidated duplicate styles from html, and added responsive by defining the height, width as 100% (so it doesn't stretch or distory), and added a max-width, so it becomes less unruly on larger screens. */
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+/* navigation bar size and position*/
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+  font-family: myFirstFont;
+  src: url(fonts/infini-bold.otf);
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius:3px;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-family: myFirstFont;
+    src: url(fonts/infini-bold.otf);
+      font-size: 35px;
+      font-style: normal;
+      padding: 50px;
+  }
+  nav ul li a{
+      font-size: 17px;
+  }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display:block;
+    }
+
+    /* took out positioning so nav can reflow in content */
+    ul{
+        width: 100%;
+        top: 20px;
+        text-align: center; 
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+        /* added margin-right to re-define, since there was a 20px float on desktop view */
+        margin-right: 0px;
+    }
+    /* transition for navigation bar */
+    nav ul li a{
+      font-family: myFirstFont;
+      src: url(fonts/infini-bold.otf);
+      font-size: 25px;
+      font-style: normal; 
+    }
+
+/* rearranged targeted elements from this reference: https://www.lockedownseo.com/responsive-rearrange-elements-css/ */
+.parent { 
+  display: table;
+}
+.child1 {
+  display: table-footer-group;
+}
+.child3 {
+  display: table-header-group;
+}
+}

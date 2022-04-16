@@ -1,74 +1,102 @@
-// draw a diagonal line of ellipses
-function setup() {
-	createCanvas(1000, 1000);
-	noStroke();
-}
+// template for saving png files from p5.js sketch using CCapture
+var capture = true; // default is to not capture frames, can be changed with button in browser
+var capturer = new CCapture({format:'png'});
+const NUM_FRAMES = 362;
+const T = 1;
 
-function draw() {
-	background(100);
-  
-  
-//left stroke
+let angle = 0;
 
-	// number of ellipses in line
-	var num = 6;
-  
-	// initialize xy
-	var x = 480;
-	var y = 130;
+function setup()  {
+  createCanvas(1000, 1000);
+  angleMode(DEGREES);
+} 
 
+function draw()  {
+if (capture && frameCount==1) capturer.start(); // start the animation capture{
+ background(220);
 
-	// count with i 
-	for (var i = 0; i <= num; i++) {
+ translate(500, 500);
+ rotate(angle);
+ellipseMode(CENTER);
 
-		// draw ellipse at xy
-       fill(0, 255, 200);
-		ellipse(x, y, 40);
-		// ellipse((10-i)*x, i*y, 40);
+angle = angle + 1;
 
-		// increment xy dividing evenly by width and height
-		x -= width/15;
-		y += height/8;
-    
+ //left stroke
+  fill(0);
+  ellipse (-300, 400, 100);
+  fill(0);
+  ellipse (-300, 300, 100);
+  fill(0);
+  ellipse (-300, 200, 100);
+  fill(0);
+  ellipse (-300, 100, 100);
+  fill(0);
+  ellipse (-300, 0, 100);
+  fill(0);
+  ellipse (-300, -100, 100);
+  fill(0);
+  ellipse (-300, -200, 100);
+  fill(0);
+  ellipse (-300, -300, 100);
+  fill(0);
+  ellipse (-300, -400, 100);
+  //top horizantal stroke
+  fill(0);
+  ellipse (-200, -400, 100);
+  fill(0);
+  ellipse (-100, -400, 100);
+  fill(0);
+  ellipse (0, -400, 100);
+  fill(0);
+  ellipse (100, -400, 100);
+  fill(0);
+  ellipse (200, -400, 100);
+  //right stroke
+  fill(0);
+  ellipse (300, -400, 100);
+  fill(0);
+  ellipse (300, -300, 100);
+  fill(0);
+  ellipse (300, -200, 100);
+  fill(0);
+  ellipse (300, -100, 100);
+  fill(0);
+  ellipse (300, 0, 100);
+  fill(0);
+  ellipse (300, 100, 100);
+  fill(0);
+  ellipse (300, 200, 100);
+  fill(0);
+  ellipse (300, 300, 100);
+  fill(0);
+  ellipse (300, 400, 100);
+  fill(0);
+  //middle horizantal stroke
+  ellipse (200, 100, 100);
+  fill(0);
+  ellipse (100, 100, 100);
+  fill(0);
+  ellipse (0, 100, 100);
+  fill(0);
+  ellipse (-100, 100, 100);
+  fill(0);
+  ellipse (-200, 100, 100);
+
+  if (frameCount < 362) {
+    capturer.capture( canvas ); // if capture is 'true', save the frame
+   } else if (frameCount == NUM_FRAMES) { //stop and save after NUM_FRAMES
+        capturer.stop(); 
+        capturer.save(); 
+        noLoop(); 
     }
-  
-//right stroke
-  
-  	// number of ellipses in line
-	var num = 6;
-  
-	// initialize xy
-	var x = 520;
-	var y = 130;
 
-
-	// count with i 
-	for (var i = 0; i <= num; i++) {
-
-		// draw ellipse at xy
-		ellipse(x, y, 40);
-		// ellipse((10-i)*x, i*y, 40);
-
-		// increment xy dividing evenly by width and height
-		x += width/15;
-		y += height/8;
-    
-   
-
-
-	}
-
-//cross bar  *coding train 4.1*
-  
-  // number of ellipses in line
-for (var x = 250; x <= 750; x +=100) {
-  
-  
-  ellipse(x, 590, 40);
-
+function buttonPress() {
+    if (capture == true) {
+        capture = true;
+        document.getElementById("myButton").value='Saving Frames... Press Again to Cancel'; 
+        frameCount = 0;
+    } else {
+        location.reload(); //refresh the page (starts animation over, stops saving frames)
+    }
 }
-
-	
-    
-
 }

@@ -4,8 +4,10 @@ function setup() {
     }
 
     function draw() {
-        background(255, 100, 100);
-        fill(0, 200, 200);
+        colorMode(HSB, 360, 100, 100);
+        background(255, 80, 100);
+
+        fill(320, 100, 100);
 
     rect(600, 300, 100, 400);
 

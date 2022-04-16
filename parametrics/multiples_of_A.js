@@ -3,7 +3,7 @@ let textMes = 'A';
 
 
 function setup() {
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(1000, 1000);
   background(bgCol);
   textFont("Hind");
   textSize(120);

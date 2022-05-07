@@ -78,18 +78,18 @@ function draw() {
     capturer.capture( canvas ); // if capture is 'true', save the frame
     if (frameCount-1 == NUM_FRAMES){ //stop and save after NUM_FRAMES
         capturer.stop(); 
-        capturer.save(); 
+    //    capturer.save(); 
         noLoop(); 
     }
 }
 }
-function buttonPress()
+//function buttonPress()
 {
-    if (capture == true) {
-        capture = true;
-        document.getElementById("myButton").value='Saving Frames... Press Again to Cancel'; 
-        frameCount = 0;
-    } else {
-        location.reload(); //refresh the page (starts animation over, stops saving frames)
-    }
-}
+   // if (capture == true) {
+     //   capture = true;
+       // document.getElementById("myButton").value='Saving Frames... Press Again to Cancel'; 
+        //frameCount = 0;
+    } //else {
+        //location.reload(); //refresh the page (starts animation over, stops saving frames)
+    //}
+//}

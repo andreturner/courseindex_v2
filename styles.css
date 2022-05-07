@@ -36,7 +36,8 @@ src: url(fonts/infini-bold.otf);
     color: black;
     font-size: 1.4em;
     line-height: 1em;
-    margin: 1em;
+    margin-left: 4.6em;
+    margin-right: auto;
 }
 
 /* added a max-width to paragraphs */
@@ -46,6 +47,8 @@ max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 }
+
+
 
 body {
   background-color: powderblue;
@@ -70,8 +73,9 @@ img{
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1400px;
+    max-width: 1200px;
 }
+
 /* navigation bar size and position*/
 nav ul{
     float:right;

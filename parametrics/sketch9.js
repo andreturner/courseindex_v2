@@ -25,8 +25,8 @@ if (frameCount < 260) {
   capturer.capture(canvas); // if capture is 'true', save the frame
  } else if (frameCount == NUM_FRAMES){ //stop and save after NUM_FRAMES
       capturer.stop(); 
-      capturer.save(); 
-      noLoop(); 
+     // capturer.save(); 
+     // noLoop(); 
   }
 }
 

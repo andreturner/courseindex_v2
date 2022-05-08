@@ -1,14 +1,14 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(fonts/infini-bold.otf);
-    src: url(fonts/LibertinusSans-regular.otf);
+    src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
+    src: url(Desktop/GD2/courseindex/fonts/LibertinusSans-regular.otf);
   }
   
   a:link {
   color: black;
   text-decoration: none;
   font-family: myFirstFont;
-  src: url(fonts/LibertinusSans-regular.otf);
+  src: url(Desktop/GD2/courseindex/fonts/LibertinusSans-regular.otf);
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
@@ -19,7 +19,7 @@ margin-right: auto;
   color: #3e3098;
   text-decoration: none;
   font-family: myFirstFont;
-  src: url(fonts/LibertinusSans-regular.otf);
+  src: url(Desktop/GD2/courseindex/fonts/LibertinusSans-regular.otf);
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
@@ -30,7 +30,7 @@ margin-right: auto;
   color: #0000e1;
   text-decoration: underline;
   font-family: myFirstFont;
-  src: url(fonts/LibertinusSans-regular.otf);
+  src: url(Desktop/GD2/courseindex/fonts/LibertinusSans-regular.otf);
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
@@ -41,7 +41,7 @@ margin-right: auto;
   color: #890505; 
   text-decoration: underline;
   font-family: myFirstFont;
-  src: url(fonts/LibertinusSans-regular.otf);
+  src: url(Desktop/GD2/courseindex/fonts/LibertinusSans-regular.otf);
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
@@ -50,7 +50,7 @@ margin-right: auto;
   /* added an h1 style */
   h1 {   
   font-family: myFirstFont;
-  src: url(fonts/infini-bold.otf);
+  src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
       font-weight: 800;
       font-style: normal;
       color: black;
@@ -61,7 +61,7 @@ margin-right: auto;
   
   /* added a max-width to paragraphs */
   p {font-family: myFirstFont;
-  src: url(fonts/libertinussans-regular.otf);
+  src: url(Desktop/GD2/courseindex/fonts/libertinussans-regular.otf);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -107,7 +107,7 @@ margin-right: auto;
   /* website title */
   label.logo{
       font-family: myFirstFont;
-      src: url(fonts/infini-bold.otf);
+      src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
       font-weight: 800;
       font-style: normal;
       color: black;
@@ -137,7 +137,7 @@ margin-right: auto;
   }
   nav ul li a{
     font-family: myFirstFont;
-    src: url(fonts/infini-bold.otf);
+    src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
       font-style: normal;
       color: black;
       font-size: 17px;
@@ -150,7 +150,7 @@ margin-right: auto;
   @media (max-width: 952px){
     label.logo{
       font-family: myFirstFont;
-      src: url(fonts/infini-bold.otf);
+      src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
         font-size: 35px;
         font-style: normal;
         padding: 50px;
@@ -180,7 +180,7 @@ margin-right: auto;
       /* transition for navigation bar */
       nav ul li a{
         font-family: myFirstFont;
-        src: url(fonts/infini-bold.otf);
+        src: url(Desktop/GD2/courseindex/fonts/infini-bold.otf);
         font-size: 25px;
         font-style: normal; 
       }
